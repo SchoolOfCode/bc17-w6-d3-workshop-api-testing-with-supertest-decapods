@@ -16,7 +16,7 @@ You're a software developer working at an e-commerce company and your manager wa
 
 Time to dive into action! 🏊‍♂️ Here's what you'll be working on:
 
-### 🎫 Ticket 1 - Familiarity
+### 🎫 Ticket 1 - Familiarity ✅
 
 You're going to be testing an existing API, so first task for you and your team is to get familiar with the codebase.
 
@@ -31,7 +31,7 @@ Some questions that might help guide your exploration:
 - What endpoints/operations does the API support?
 - What's the purpose of the `vitest.config.js` file?
 
-### 🎫 Ticket 2 - Setup
+### 🎫 Ticket 2 - Setup ✅
 
 Familiarising yourself with an existing codebase is an important skill to practise as a developer. Your manager has now tasked you with the following:
 
@@ -45,11 +45,11 @@ Familiarising yourself with an existing codebase is an important skill to practi
   - Why: The API tests you'll write will send real requests to the API. When the API receives those requests, the code within the request handler will try to speak to a database (since this API uses a database for persistence). Hence, you need a database for testing purposes.
   - One of the downsides to using an online database provider for a test database is that their service may break occasionally, which would cause these API tests to fail for the wrong reasons (since the API can't connect to the database during the tests). There are alternative approaches that wouldn't involve connecting to a database server across the internet. These approaches can be more reliable for testing, but would require more setup and tooling. So for now, we're keeping things simpler. (If your database does go down during your tests, create another one or use a different provider.)
 
-### 🎫 Ticket 3 - Test skeleton
+### 🎫 Ticket 3 - Test skeleton ✅
 
 Your next task is to create a `users.test.js` file within the `users` folder. Then within the `users.test.js` file, write a bare bones test (the test name can be `"GET /api/health works"` and the test callback can be left empty). Whilst this isn't a useful test yet, it's enough to register the test. Then run Vitest to check it detects the test file and the test passes.
 
-### 🎫 Ticket 4 - Make a request with Supertest
+### 🎫 Ticket 4 - Make a request with Supertest  ✅
 
 Whilst exploring the codebase earlier, you may have noticed a `GET /api/health` endpoint in the `app.js` file. Your next task is to learn how to use Supertest to send a GET request to this API endpoint within the test you started in the previous ticket. Your manager's tied up in a meeting for the next couple of hours, so looks like you and your team will have to figure things out on your own.
 
@@ -105,7 +105,7 @@ Once you and your team are ready, write the test code based on the plan. Once yo
 
 At this point you should have a single test (which isn't useful yet as no assertions have been added) and it should be passing.
 
-### 🎫 Ticket 5 - Making assertions
+### 🎫 Ticket 5 - Making assertions ✅
 
 Well done on making a request with Supertest, your manager is thrilled with the progress you're making! Tests typically are incomplete until assertions are added. Your next task is to add assertions to the existing test, so that you can check whether certain aspects of the API response are as expected. Before you make assertions in the test, it's useful to first think about what things does the test actually need to check.
 
