@@ -17,5 +17,13 @@ test("GET /api/health works", async () => {
 });
 
 test("GET /api/users", async () => {
-
+    //act
+    await resetUsersTable();
+    const response = await request(app).get("/api/users").set("Accept", "application/json");
+    //assert
+    expect(response.headers["Content-Type"]).toMatch(/json/);
+    expect(response.body).toEqual({
+        success: true,
+        payload: [],
+    });
 })
